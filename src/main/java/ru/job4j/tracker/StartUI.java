@@ -17,6 +17,16 @@ public class StartUI {
             String name = scanner.nextLine();
             Item item = new Item(name);
             tracker.add(item);
+        } else if (select == 1) {
+            System.out.println("=== Show all items ===");
+            Item[] items = tracker.findAll();
+            if (items.length > 0) {
+                for (Item item : items) {
+                    System.out.println(item);
+                }
+            } else {
+                System.out.println("Хранилище еще не содержит заявок");
+            }
         } else if (select != 6) {
             System.out.println("Пользователь выбрал: " + select);
         } else {
