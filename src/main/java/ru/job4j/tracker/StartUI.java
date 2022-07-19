@@ -13,17 +13,18 @@ public class StartUI {
     }
 
     private void showMenu(UserAction[] actions) {
-        System.out.println("Menu.");
-        for (int index = 0; index < actions.length; index++) {
-            System.out.println(index + ". " + actions[index].name());
+        System.out.println("Menu:");
+        for (int i = 0; i < actions.length; i++) {
+            System.out.println(i + ". " + actions[i].name());
         }
+
     }
 
     public static void main(String[] args) {
         Input input = new ConsoleInput();
         Tracker tracker = new Tracker();
-        UserAction[] actions = {new CreateAction(), new EditAction(), new DeleteAction(), new ExitAction(),
-                new FindIdAction(), new FindNameAction(), new ShowAction()};
+        UserAction[] actions = {new CreateAction(), new EditAction(), new DeleteAction(),
+                new ShowAction(), new FindIdAction(), new FindNameAction(), new ExitAction()};
         new StartUI().init(input, tracker, actions);
     }
 }
