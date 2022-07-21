@@ -10,18 +10,17 @@ public class UserStore {
                 break;
             }
         }
-               if (found == null) {
+        if (found == null) {
                    throw new UserNotFoundException("Пользователь не найден");
-            }
+        }
         return found;
     }
 
     public static boolean validate(User user) throws UserInvalidException {
-        if (user.isValid() && user.getUsername().length() >= 3) {
-            return true;
-        } else {
+        if (!user.isValid() || user.getUsername().length() < 3) {
             throw new UserInvalidException("Пользователь не валидный");
         }
+        return true;
     }
 
     public static void main(String[] args) {
