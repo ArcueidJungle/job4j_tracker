@@ -72,7 +72,7 @@ public class StartUITest {
         );
         Tracker tracker = new Tracker();
         List<UserAction> actions = asList(
-                new ExitAction(out) );
+                new ExitAction(out));
         new StartUI(out).init(in, tracker, actions);
         assertThat(out.toString(), is(
                 "Menu." + System.lineSeparator()
