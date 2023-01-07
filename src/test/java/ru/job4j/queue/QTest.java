@@ -3,7 +3,7 @@ package ru.job4j.queue;
 import java.util.Deque;
 import java.util.LinkedList;
 
-public class qTest {
+public class QTest {
     public static void main(String[] args) {
         Deque<Integer> deque = new LinkedList<>();
         deque.add(1);
