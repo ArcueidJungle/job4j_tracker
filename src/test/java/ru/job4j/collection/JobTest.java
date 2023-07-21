@@ -29,9 +29,9 @@ public class JobTest {
 
     @Test
     public void whenJobDownPriority() {
-        Job jobs1 = new Job("Владимир", 1);
-        Job jobs2 = new Job("Анн", 4);
-        Job jobs3 = new Job("Генадий", 7);
+        Job jobs1 = new Job("Р’Р»Р°РґРёРјРёСЂ", 1);
+        Job jobs2 = new Job("РђРЅРЅ", 4);
+        Job jobs3 = new Job("Р“РµРЅР°РґРёР№", 7);
         List<Job> list = new ArrayList<>();
         list.add(jobs1);
         list.add(jobs2);
@@ -46,9 +46,9 @@ public class JobTest {
 
     @Test
     public void whenJobUpPriority() {
-        Job jobs1 = new Job("Владимир", 9);
-        Job jobs2 = new Job("Анна", 4);
-        Job jobs3 = new Job("Генадий", 7);
+        Job jobs1 = new Job("Р’Р»Р°РґРёРјРёСЂ", 9);
+        Job jobs2 = new Job("РђРЅРЅР°", 4);
+        Job jobs3 = new Job("Р“РµРЅР°РґРёР№", 7);
         List<Job> list = new ArrayList<>();
         list.add(jobs1);
         list.add(jobs2);
