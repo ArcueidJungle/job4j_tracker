@@ -30,7 +30,7 @@ public class JobTest {
     @Test
     public void whenJobDownPriority() {
         Job jobs1 = new Job("Владимир", 1);
-        Job jobs2 = new Job("Анна", 4);
+        Job jobs2 = new Job("Анн", 4);
         Job jobs3 = new Job("Генадий", 7);
         List<Job> list = new ArrayList<>();
         list.add(jobs1);
