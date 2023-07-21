@@ -1,7 +1,6 @@
 ﻿package ru.job4j.collection;
 
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
