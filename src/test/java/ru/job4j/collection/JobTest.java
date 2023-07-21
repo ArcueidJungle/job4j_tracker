@@ -26,6 +26,7 @@ public class JobTest {
                 new Job("Sergey", 20));
         assertThat(rsl).isGreaterThan(0);
     }
+
     @Test
     public void whenJobDownPriority() {
         Job jobs1 = new Job("Владимир", 1);
