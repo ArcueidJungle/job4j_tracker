@@ -3,6 +3,6 @@ package ru.job4j.tracker.oop;
 public class Airplane implements Vehicle {
     @Override
     public void move() {
-        System.out.println("самолет летает по воздуху");
+        System.out.println("СЃР°РјРѕР»РµС‚ Р»РµС‚Р°РµС‚ РїРѕ РІРѕР·РґСѓС…Сѓ");
     }
 }
