@@ -3,6 +3,6 @@ package ru.job4j.tracker.oop;
 public class Bus implements Vehicle {
     @Override
     public void move() {
-        System.out.println("автобус двигается по скоростным трассам");
+        System.out.println("Р°РІС‚РѕР±СѓСЃ РґРІРёРіР°РµС‚СЃСЏ РїРѕ СЃРєРѕСЂРѕСЃС‚РЅС‹Рј С‚СЂР°СЃСЃР°Рј");
     }
 }
