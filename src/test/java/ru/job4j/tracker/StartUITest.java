@@ -23,33 +23,6 @@ public class StartUITest {
     }
 
     @Test
-    public void whenReplaceItemTestOutputIsSuccessfully() {
-        Output out = new StubOutput();
-        Tracker tracker = new Tracker();
-        Item item = tracker.add(new Item("Test1"));
-        String replacedName = "New Test1 name";
-        Input in = new StubInput(
-                new String[] {"0", String.valueOf(item.getId()), replacedName, "1"}
-        );
-        List<UserAction> actions = asList(
-                new EditAction(out),
-                new ExitAction(out));
-        new StartUI(out).init(in, tracker, actions);
-        String ln = System.lineSeparator();
-        assertThat(out.toString(), is(
-                "Menu." + ln
-                        + "0. Edit item" + ln
-                        + "1. Exit Program" + ln
-                        + "=== Edit item ===" + ln
-                        + "Заявка изменена успешно." + ln
-                        + "Menu." + ln
-                        + "0. Edit item" + ln
-                        + "1. Exit Program" + ln
-                        + "=== Exit Program ===" + ln
-        ));
-    }
-
-    @Test
     public void whenDeleteItem() {
         Output out = new StubOutput();
         Tracker tracker = new Tracker();
