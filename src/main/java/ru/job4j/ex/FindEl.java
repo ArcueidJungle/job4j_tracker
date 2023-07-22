@@ -10,7 +10,7 @@ public class FindEl {
             }
         }
         if (rsl == -1) {
-            throw new ElementNotFoundException("Элемент не найден");
+            throw new ElementNotFoundException("Р­Р»РµРјРµРЅС‚ РЅРµ РЅР°Р№РґРµРЅ");
         }
         return rsl;
     }

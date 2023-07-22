@@ -23,7 +23,7 @@ public class ShowAction implements UserAction {
                 out.println(item);
             }
         } else {
-            out.println("Хранилище еще не содержит заявок");
+            out.println("РҐСЂР°РЅРёР»РёС‰Рµ РµС‰Рµ РЅРµ СЃРѕРґРµСЂР¶РёС‚ Р·Р°СЏРІРѕРє");
         }
         return true;
     }

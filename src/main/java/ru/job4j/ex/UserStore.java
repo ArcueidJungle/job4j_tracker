@@ -11,14 +11,14 @@ public class UserStore {
             }
         }
         if (found == null) {
-                   throw new UserNotFoundException("Пользователь не найден");
+                   throw new UserNotFoundException("РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РЅРµ РЅР°Р№РґРµРЅ");
         }
         return found;
     }
 
     public static boolean validate(User user) throws UserInvalidException {
         if (!user.isValid() || user.getUsername().length() < 3) {
-            throw new UserInvalidException("Пользователь не валидный");
+            throw new UserInvalidException("РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РЅРµ РІР°Р»РёРґРЅС‹Р№");
         }
         return true;
     }

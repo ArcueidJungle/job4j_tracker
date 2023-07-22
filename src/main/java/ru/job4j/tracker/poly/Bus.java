@@ -3,12 +3,12 @@ package ru.job4j.tracker.poly;
 public class Bus implements Transport {
     @Override
     public void drive() {
-        System.out.println("автоубс поехал");
+        System.out.println("Р°РІС‚РѕСѓР±СЃ РїРѕРµС…Р°Р»");
     }
 
     @Override
     public void passengers(int count) {
-        System.out.println("количество пассажиров: " + count);
+        System.out.println("РєРѕР»РёС‡РµСЃС‚РІРѕ РїР°СЃСЃР°Р¶РёСЂРѕРІ: " + count);
     }
 
     @Override

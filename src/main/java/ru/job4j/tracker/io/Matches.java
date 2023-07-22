@@ -5,21 +5,21 @@ import java.util.Scanner;
 public class Matches {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Èãðà 11.");
+        System.out.println("Ð˜Ð³Ñ€Ð° 11.");
         boolean turn = true;
         int count = 11;
         while (count > 0) {
-            String player = turn ? "Ïåðâûé èãðîê" : "Âòîðîé èãðîê";
-            System.out.print(player + ", ââåäèòå ÷èñëî îò 1 äî 3: ");
+            String player = turn ? "ÐŸÐµÑ€Ð²Ñ‹Ð¹ Ð¸Ð³Ñ€Ð¾Ðº" : "Ð’Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¸Ð³Ñ€Ð¾Ðº";
+            System.out.print(player + ", Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¾Ñ‚ 1 Ð´Ð¾ 3: ");
             int matches = Integer.parseInt(input.nextLine());
             if (matches >= 1 && matches <= Math.min(3, count)) {
                 count -= matches;
-                System.out.println(player + " çàáðàë " + matches + " ñïè÷åê. Âñåãî îñòàëîñü " + count);
+                System.out.println(player + " Ð·Ð°Ð±Ñ€Ð°Ð» " + matches + " ÑÐ¿Ð¸Ñ‡ÐµÐº. Ð’ÑÐµÐ³Ð¾ Ð¾ÑÑ‚Ð°Ð»Ð¾ÑÑŒ " + count);
                 turn = !turn;
             } else {
-                System.out.println("Îøèáêà ââîäà. Ïîïðîáóéòå ââåñòè åù¸ ðàç.");
+                System.out.println("ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ Ð²Ð²ÐµÑÑ‚Ð¸ ÐµÑ‰Ñ‘ Ñ€Ð°Ð·.");
             }
         }
-        System.out.println("Ïîáåäèë " + (!turn ? "Ïåðâûé èãðîê." : "Âòîðîé èãðîê."));
+        System.out.println("ÐŸÐ¾Ð±ÐµÐ´Ð¸Ð» " + (!turn ? "ÐŸÐµÑ€Ð²Ñ‹Ð¹ Ð¸Ð³Ñ€Ð¾Ðº." : "Ð’Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¸Ð³Ñ€Ð¾Ðº."));
     }
 }
