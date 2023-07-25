@@ -18,6 +18,6 @@ public class Card {
         Stream.of(Suit.values())
                 .flatMap(suit -> Stream.of(Value.values())
                         .map(value -> new Card(suit, value)))
-                        .forEach(System.out :: println);
+                        .forEach(System.out::println);
     }
 }
