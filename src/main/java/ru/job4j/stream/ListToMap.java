@@ -12,7 +12,7 @@ public class ListToMap {
                 .collect(Collectors.toMap(
                         Student::getSurname,
                         student -> student,
-                        (surname1, surname2) -> surname1
+                        (oldValue, newValue) -> oldValue
                         ));
     }
 }
