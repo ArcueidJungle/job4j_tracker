@@ -8,10 +8,13 @@ public class Departments {
     public static List<String> fillGaps(List<String> deps) {
         Set<String> tmp = new LinkedHashSet<>();
         for (String value : deps) {
-            String start = "";
+            String start = value.substring(0, 2);
             for (String el : value.split("/")) {
-                start += "".equals(start) ? el : "/" + el;
-                tmp.add(start);
+                if (value.substring(0, 2).equals(el)) {
+                    tmp.add(start);
+                } else {
+                    tmp.add(start = start + "/" + el);
+                }
             }
         } return new ArrayList<>(tmp);
     }
