@@ -40,7 +40,7 @@ public class Analyze {
                         .mapToInt(Subject::score)
                         .sum()))
                 .max(Comparator.comparingDouble(Tuple::score))
-                .orElse(new Tuple("Default", 0D));
+                .orElse(null);
     }
 
     public static Tuple bestSubject(Stream<Pupil> stream) {
@@ -53,6 +53,6 @@ public class Analyze {
                 .stream()
                 .map(s -> new Tuple(s.getKey(), s.getValue()))
                 .max(Comparator.comparing(Tuple::score))
-                .orElse(new Tuple("Default", 0D));
+                .orElse(null);
     }
 }
